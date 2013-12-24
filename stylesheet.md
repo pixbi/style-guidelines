@@ -10,6 +10,6 @@ This guideline will grow and evolve as Pixby does. If an idea here conflicts wit
 ## CSS General Guidelines
 
 1. Only use classes/attribues/pseudoselectors. Make an attempt to refrain from the use of IDs and element names.
-2. Don't use *. This isn't forward-thinking and creates a performance hit.
+2. Don't use *. It's most likely never necessary.
 3. Try not to nest further than three levels. Any more is probably unnecessary and will add weight.
-4. Anything quantitative that isn't immediately obvious should be saved into a variable. No one we've met has the ability to visualize hex color codes.
+5. Anything quantitative that isn't immediately obvious should be saved into a variable. No one we've met has the ability to visualize hex color codes.
