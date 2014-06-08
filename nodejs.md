@@ -24,11 +24,11 @@
 * *Prefer pure functions*. Corollary to avoiding global states. Functions which
   produce effect as output (e.g. `Math.random`) are fine, just not side-effects
   (e.g. `this.a = this.b + 2`).
-* *Avoid prototypes*. At least in the traditional object-oriented programming
-  sense of properties and methods. Corollary to preferring pure functions.
-  Object-oriented programming is necessary only when programming in an
-  environment without access to closure or a strong type system. Prototypes
-  should only be used for data types.
+* *Avoid prototypes*. Corollary to preferring pure functions. Object-oriented
+  programming is necessary only when programming in an environment without
+  access to closure or a strong type system.
+* *Use `new` and `this` sparingly*. In fact, *only* use `this` in constructors
+  and `new` for data types (i.e. no methods).
 * *Prefer module pattern*. Corollary to avoiding prototypes. The module pattern
   is superior to the prototype/object patterns because states are enclosed
   lexically via closure rather than dynamically.
