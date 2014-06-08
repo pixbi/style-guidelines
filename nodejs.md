@@ -23,25 +23,23 @@
   often necessary).
 * *Prefer pure functions*. Corollary to avoiding global states. Functions which
   produce effect as output (e.g. `Math.random`) are fine, just not side-effects
-  (e.g. `this.a = 1`).
-* *Avoid prototypes*. Corollary to preferring pure functions. Object-oriented
-  programming is necessary only when programming in an environment without
-  access to closure and a strong type system (if inheritance is needed).
+  (e.g. `this.a = this.b + 2`).
+* *Avoid prototypes*. At least in the traditional object-oriented programming
+  sense of properties and methods. Corollary to preferring pure functions.
+  Object-oriented programming is necessary only when programming in an
+  environment without access to closure or a strong type system. Prototypes
+  should only be used for data types.
 * *Prefer module pattern*. Corollary to avoiding prototypes. The module pattern
   is superior to the prototype/object patterns because states are enclosed
   lexically via closure rather than dynamically.
 * *Prefer simple modules*. Corollary to preferring using module patterns. When
-  you have a module that creates sub-modules inside it, it may be a sign of
-  troubles to come.
-* *Avoid `new` and `this`*. `new` and `this` are used in combination with
-  prototypes. Using `new` is fine as it defines a new type (though in a weak
-  type system that JavaScript offers), but *never* attach methods as it makes
-  reasoning about the program harder via a dynamic scope.
+  you have a module that creates sub-modules inside it, the module may be too
+  big.
 * *ALWAYS use semicolons*. Never rely on automatic semicolon insertion. It will
   break your mind.
 * *Always name your function*. Static functions are preferred over anonymous
   functions, even if you need to do this: `exports.doSomething = function
-  doSomething () {}`
+  doSomething () {}`.
 * *NEVER use `arguments`*. Engines can't optimize it, nor can you easily reason
   about a function using it. You should really be using an array instead of
   variadic parameters.
