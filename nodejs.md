@@ -38,3 +38,6 @@
   in newer engines due to hidden classes. Avoid the temptation to use it!
 * *ALWAYS use semicolons*. Never rely on automatic semicolon insertion. It will
   break your mind.
+* *Always name your function*. Static functions are preferred over anonymous
+  functions, even if you need to do this: `exports.doSomething = function
+  doSomething () {}`
