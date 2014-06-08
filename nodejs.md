@@ -41,3 +41,6 @@
 * *Always name your function*. Static functions are preferred over anonymous
   functions, even if you need to do this: `exports.doSomething = function
   doSomething () {}`
+* *NEVER use `arguments`*. Engines can't optimize it, nor can you easily reason
+  about a function using it. You should really be using an array instead of
+  variadic parameters.
