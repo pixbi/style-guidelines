@@ -30,3 +30,5 @@
 * *Prefer simple modules*. Corollary to preferring using module patterns. When
   you have a module that creates sub-modules inside it, it may be a sign of
   troubles to come.
+* *ALWAYS use semicolons*. Never rely on automatic semicolon insertion. It will
+  break your mind.
