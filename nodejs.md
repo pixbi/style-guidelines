@@ -20,7 +20,13 @@
 
 * *Avoid global states*. States in modules and closures are fine (and
   often necessary).
-* *Prefer pure functions*. Corollary to avoiding global states.
+* *Prefer pure functions*. Corollary to avoiding global states. Functions which
+  produce effect as output (e.g. `Math.random`) are fine, just not side-effects
+  (e.g. `this.a = 1`).
 * *Avoid prototypes*. Corollary to preferring pure functions.
-* *Prefer module pattern*. Corollary to avoiding prototypes.
-* *Prefer simple modules*. Corollary to preferring using module patterns.
+* *Prefer module pattern*. Corollary to avoiding prototypes. The module pattern
+  is superior to the prototype/object patterns because states are enclosed
+  lexically via closure rather than dynamically.
+* *Prefer simple modules*. Corollary to preferring using module patterns. When
+  you have a module that creates sub-modules inside it, it may be a sign of
+  troubles to come.
