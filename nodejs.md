@@ -34,9 +34,9 @@
   you have a module that creates sub-modules inside it, it may be a sign of
   troubles to come.
 * *Avoid `new` and `this`*. `new` and `this` are used in combination with
-  prototypes. Do *NOT* use it.  This is the classic trade-off between
-  maintainability and performance as prototype objects are *generally* faster
-  in newer engines due to hidden classes. Avoid the temptation to use it!
+  prototypes. Using `new` is fine as it defines a new type (though in a weak
+  type system that JavaScript offers), but *never* attach methods as it makes
+  reasoning about the program harder via a dynamic scope.
 * *ALWAYS use semicolons*. Never rely on automatic semicolon insertion. It will
   break your mind.
 * *Always name your function*. Static functions are preferred over anonymous
