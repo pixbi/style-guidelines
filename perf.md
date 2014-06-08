@@ -1,7 +1,7 @@
 Performance Hacks
 =================
 
-* FIRST, cache all DOM elements that is used more than once.
+* FIRST, cache all DOM elements that are used more than once.
 * Use hand-coded JavaScript. It is much more difficult to optimize with
   CoffeeScript or other compile-to-JavaScript languages.
 * Only use static functions or functions in simple objects (i.e. no prototypes).
