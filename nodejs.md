@@ -18,8 +18,8 @@
 
 ### Style
 
-* *Avoid global states*. States in modules and closures are fine. Global
-  functions are ok as long as they are stateless. Use judgment.
+* *Avoid global states*. States in modules and closures are fine (and
+  often necessary).
 * *Prefer pure functions*. Corollary to avoiding global states.
 * *Avoid prototypes*. Corollary to preferring pure functions.
 * *Prefer module pattern*. Corollary to avoiding prototypes.
