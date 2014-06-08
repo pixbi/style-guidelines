@@ -3,8 +3,9 @@
 ## Three Golden Rules
 
 1. Comment, document, and test liberally
-2. Prefer pure functions
-3. Prefer maintainability over performance
+2. Prefer maintainability over performance
+3. Write your JavaScript as if it's C, or write it as if it's Lisp, but never
+   as if it's Java as its name implies.
 
 ## General Guidelines
 
