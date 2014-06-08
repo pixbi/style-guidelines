@@ -2,9 +2,9 @@
 
 ## Three Golden Rules
 
-1. Comment and document liberally
-2. Write test cases first
-3. Prefer pure functions
+1. Comment, document, and test liberally
+2. Prefer pure functions
+3. Prefer maintainability over performance
 
 ## General Guidelines
 
@@ -23,12 +23,18 @@
 * *Prefer pure functions*. Corollary to avoiding global states. Functions which
   produce effect as output (e.g. `Math.random`) are fine, just not side-effects
   (e.g. `this.a = 1`).
-* *Avoid prototypes*. Corollary to preferring pure functions.
+* *Avoid prototypes*. Corollary to preferring pure functions. Object-oriented
+  programming is necessary only when programming in an environment without
+  access to closure and a strong type system (if inheritance is needed).
 * *Prefer module pattern*. Corollary to avoiding prototypes. The module pattern
   is superior to the prototype/object patterns because states are enclosed
   lexically via closure rather than dynamically.
 * *Prefer simple modules*. Corollary to preferring using module patterns. When
   you have a module that creates sub-modules inside it, it may be a sign of
   troubles to come.
+* *Avoid `new` and `this`*. `new` and `this` are used in combination with
+  prototypes. Do *NOT* use it.  This is the classic trade-off between
+  maintainability and performance as prototype objects are *generally* faster
+  in newer engines due to hidden classes. Avoid the temptation to use it!
 * *ALWAYS use semicolons*. Never rely on automatic semicolon insertion. It will
   break your mind.
