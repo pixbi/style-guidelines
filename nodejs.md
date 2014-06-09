@@ -43,3 +43,5 @@
 * *NEVER use `arguments`*. Engines can't optimize it, nor can you easily reason
   about a function using it. You should really be using an array instead of
   variadic parameters.
+* *Avoid `try...catch`* JavaScript already gives useless error messages. Don't
+  make your life harder by allowing your code to arbitrarily hide them.
