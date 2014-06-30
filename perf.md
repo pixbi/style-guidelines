@@ -74,3 +74,7 @@ Further readings
   JavaScript"](http://www.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/)
   by Addy Osmani
 * [V8 Design Elements](https://developers.google.com/v8/design)
+* [Google's recommendations on "Optimizing JavaScript
+  code"](https://developers.google.com/speed/articles/optimizing-javascript)
+* [Performance Tips for JavaScript in V8](http://www.html5rocks.com/en/tutorials/speed/v8/)
+* [V8 Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
