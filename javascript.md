@@ -1,4 +1,4 @@
-# Node.js JavaScript Guidelines
+# JavaScript Guidelines
 
 ## Three Golden Rules
 
@@ -12,7 +12,8 @@
 ### Resources
 
 * Use [Mocha](http://visionmedia.github.io/mocha/) for testing
-* Use [JSDoc](http://usejsdoc.org/) for documentation
+* Use [Google Closure Compiler JSDoc
+  style](https://developers.google.com/closure/compiler/) for documentation
 * Prefer using [libraries](https://www.npmjs.org/) over writing code
 * Read [JavaScript: The Good
   Parts](http://books.google.com/books/about/JavaScript_The_Good_Parts.html?id=PXa2bby0oQ0C)
