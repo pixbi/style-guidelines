@@ -78,3 +78,5 @@ Further readings
   code"](https://developers.google.com/speed/articles/optimizing-javascript)
 * [Performance Tips for JavaScript in V8](http://www.html5rocks.com/en/tutorials/speed/v8/)
 * [V8 Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+* [Improving JavaScript Performance by Deconstructing the Type
+  System](http://iacoma.cs.uiuc.edu/iacoma-papers/pldi14.pdf)
