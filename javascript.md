@@ -34,10 +34,11 @@ In no particular order:
 * *NEVER use `arguments`*. Engines can't optimize it, nor can you easily reason
   about a function using it. You should really be using an array instead of
   variadic parameters.
-* *Avoid `try...catch`* JavaScript already gives sparse and useless error messages. Don't
-  make your life harder by allowing your code to arbitrarily hide them. Plus,
-  JavaScript engines can't optimize any code in the `try...catch` block. If you
-  must use it (e.g. `JSON.parse`), isolate it in its own function.
+* *Avoid `try...catch`*. JavaScript already gives sparse and useless error
+  messages. Don't make your life harder by allowing your code to arbitrarily
+  hide them. Plus, JavaScript engines can't optimize any code in the
+  `try...catch` block. If you must use it (e.g. `JSON.parse`), isolate it in
+  its own function.
 * *Do not nest anything*. This includes `setTimeout`, callbacks, and functions.
   Having one level of nesting is acceptable but more than that is a sign of
   something wrong.
@@ -47,7 +48,8 @@ In no particular order:
 * *Use data types*. Typing is good for your mind. Logical data types like
   `Person`, not machine types like `int`.
 * *Single assignment*. Do not re-use variables for different purposes. There is
-  no valid use case for that.
+  no valid use case for that. Note that re-assigning `i` in a loop does not
+  count as it is used for the *same purpose*.
 
 
 ## Pure Function Preference
