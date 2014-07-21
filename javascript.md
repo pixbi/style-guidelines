@@ -1,9 +1,5 @@
 # JavaScript Coding Style
 
-First, don't use JavaScript if you can. If you must use JavaScript, these are
-some "rules" for a sane programming experience.
-
-
 ## Three Golden Rules
 
 1. Comment, document, and test liberally
